@@ -5,14 +5,20 @@ const App = () => {
       <nav className="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-xl">
         <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
           <div className="text-xl font-bold tracking-tight text-white font-headline">DevEx Gallery</div>
-<div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8">
             <a className="text-gray-400 font-medium hover:text-white transition-colors font-body" href="#services">Services</a>
             <a className="text-gray-400 font-medium hover:text-white transition-colors font-body" href="#pricing">Pricing</a>
             <a className="text-gray-400 font-medium hover:text-white transition-colors font-body" href="#samples">Samples</a>
           </div>
-          <button className="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-200">
+          <a className="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-200" href="#footer" onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("footer")?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }}>
             Hire Me
-          </button>
+          </a>
         </div>
       </nav>
 
@@ -162,7 +168,7 @@ const App = () => {
                     FREE 1-Month Support
                   </div>
                 </div>
-                <button className="w-full py-4 rounded-xl border border-outline-variant/30 text-white font-bold hover:bg-surface-container-high transition-all">Get Started</button>
+                {/* <button className="w-full py-4 rounded-xl border border-outline-variant/30 text-white font-bold hover:bg-surface-container-high transition-all">Get Started</button> */}
               </div>
               {/* Package 2 (Recommended) */}
               <div className="bg-surface-container-high p-8 md:p-10 rounded-3xl flex flex-col h-full relative border-t-2 border-primary ring-1 ring-primary/20 shadow-2xl shadow-primary/10">
@@ -196,7 +202,7 @@ const App = () => {
                     FREE 1-Month Support
                   </div>
                 </div>
-                <button className="w-full py-4 rounded-xl bg-primary-container text-on-primary-container font-bold shadow-lg shadow-primary-container/30 hover:scale-[1.02] transition-all">Select Package</button>
+                {/* <button className="w-full py-4 rounded-xl bg-primary-container text-on-primary-container font-bold shadow-lg shadow-primary-container/30 hover:scale-[1.02] transition-all">Select Package</button> */}
               </div>
               {/* Package 3 */}
               <div className="bg-surface-container-low p-8 md:p-10 rounded-3xl flex flex-col h-full relative overflow-hidden group">
@@ -230,7 +236,7 @@ const App = () => {
                     FREE 1-Month Support
                   </div>
                 </div>
-                <button className="w-full py-4 rounded-xl border border-outline-variant/30 text-white font-bold hover:bg-surface-container-high transition-all">Get Started</button>
+                {/* <button className="w-full py-4 rounded-xl border border-outline-variant/30 text-white font-bold hover:bg-surface-container-high transition-all">Get Started</button> */}
               </div>
             </div>
           </div>
@@ -287,7 +293,7 @@ const App = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-32 relative overflow-hidden">
+        <section className="py-32 relative overflow-hidden" id="footer">
           <div className="max-w-5xl mx-auto px-8">
             <div className="bg-primary-container/10 border border-primary/20 rounded-[40px] p-12 md:p-20 text-center relative overflow-hidden">
               <div className="absolute top-0 right-0 p-10 opacity-10">
