@@ -10,7 +10,7 @@ return(
     <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 md:h-[800px]">
 
       {/* Modern Corporate */}
-      <div className="aspect-video md:aspect-auto md:col-span-8 group relative rounded-3xl overflow-hidden bg-surface-container-high border border-white/5 cursor-pointer">
+      <a className="aspect-video md:aspect-auto md:col-span-8 group relative rounded-3xl overflow-hidden bg-surface-container-high border border-white/5 cursor-pointer" href="https://afiqmuhaimin-construction.pages.dev/">
         <img
           className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60"
           alt="Enterprise Project"
@@ -22,10 +22,10 @@ return(
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-1 md:mb-2 font-headline">Modern Corporate</h3>
           <p className="hidden sm:block text-on-surface-variant max-w-md font-body text-sm md:text-base">Scalable architectures with focus on security and professional brand integrity.</p>
         </div>
-      </div>
+      </a>
 
       {/* Sleek E-commerce */}
-      <div className="aspect-[4/3] md:aspect-auto md:col-span-4 group relative rounded-3xl overflow-hidden bg-surface-container-high border border-white/5 cursor-pointer">
+      <a className="aspect-[4/3] md:aspect-auto md:col-span-4 group relative rounded-3xl overflow-hidden bg-surface-container-high border border-white/5 cursor-pointer" href="https://afiqmuhaimin-woody.pages.dev/">
         <img
           className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60"
           alt="Retail Project"
@@ -34,12 +34,13 @@ return(
         <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent"></div>
         <div className="absolute bottom-0 left-0 p-6 md:p-8 w-full">
           <span className="px-3 py-1 bg-tertiary text-on-tertiary text-[10px] font-extrabold tracking-widest uppercase rounded mb-3 md:mb-4 inline-block">Retail</span>
-          <h3 className="text-xl md:text-2xl font-bold text-white mb-1 md:mb-2 font-headline">Sleek Product Centric Showcase</h3>
+          <h3 className="text-xl md:text-2xl font-bold text-white mb-1 md:mb-2 font-headline">Product Showcase</h3>
+          <p className="hidden sm:block text-on-surface-variant max-w-md font-body text-sm md:text-base">Sleek Product Centric Showcase</p>
         </div>
-      </div>
+      </a>
 
       {/* Minimalist Portfolio */}
-      <div className="aspect-[4/3] md:aspect-auto md:col-span-4 group relative rounded-3xl overflow-hidden bg-surface-container-high border border-white/5 cursor-pointer">
+      <a className="aspect-[4/3] md:aspect-auto md:col-span-4 group relative rounded-3xl overflow-hidden bg-surface-container-high border border-white/5 cursor-pointer" href="">
         <img
           className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60"
           alt="Creative Project"
@@ -49,11 +50,13 @@ return(
         <div className="absolute bottom-0 left-0 p-6 md:p-8 w-full">
           <span className="px-3 py-1 bg-secondary text-on-secondary text-[10px] font-extrabold tracking-widest uppercase rounded mb-3 md:mb-4 inline-block">Creative</span>
           <h3 className="text-xl md:text-2xl font-bold text-white mb-1 md:mb-2 font-headline">Minimalist Portfolio</h3>
+          <p className="hidden sm:block text-on-surface-variant max-w-md font-body text-sm md:text-base">Simple yet powerful portfolio showcase</p>
+          
         </div>
-      </div>
+      </a>
 
       {/* Dynamic Startup */}
-      {/* <div className="aspect-video md:aspect-auto md:col-span-8 group relative rounded-3xl overflow-hidden bg-surface-container-high border border-white/5 cursor-pointer">
+      <div className="aspect-video md:aspect-auto md:col-span-8 group relative rounded-3xl overflow-hidden bg-surface-container-high border border-white/5 cursor-pointer">
         <img
           className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60"
           alt="SaaS Project"
@@ -61,11 +64,11 @@ return(
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent"></div>
         <div className="absolute bottom-0 left-0 p-6 md:p-10 w-full">
-          <span className="px-3 py-1 bg-primary-container text-white text-[10px] font-extrabold tracking-widest uppercase rounded mb-3 md:mb-4 inline-block"></span>
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-1 md:mb-2 font-headline">Dynamic Startup</h3>
-          <p className="hidden sm:block text-on-surface-variant max-w-md font-body text-sm md:text-base">Agile solutions focused on rapid deployment, user engagement, and conversion optimization.</p>
+          <span className="px-3 py-1 bg-primary-container text-white text-[10px] font-extrabold tracking-widest uppercase rounded mb-3 md:mb-4 inline-block">Professional Brands</span>
+          <h3 className="text-2xl md:text-3xl font-bold text-white mb-1 md:mb-2 font-headline">Digital Presence Platform</h3>
+          <p className="hidden sm:block text-on-surface-variant max-w-md font-body text-sm md:text-base">Elevating brands through modern, high-performance web experiences</p>
         </div>
-      </div> */}
+      </div>
 
     </div>
   </div>
