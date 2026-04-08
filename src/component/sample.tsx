@@ -5,7 +5,7 @@ return(
   <div className="max-w-7xl mx-auto px-5 md:px-8">
     <div className="flex flex-col mb-10 md:mb-16">
       <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 font-headline">The Gallery</h2>
-      <p className="text-on-surface-variant text-lg font-body">Sample projects that are available but not limited to:</p>
+      <p className="text-on-surface-variant text-lg font-body">Explore a range of sample projects, from sleek single-page designs to fully developed multi-page web experiences</p>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 md:h-[800px]">
 
@@ -40,7 +40,7 @@ return(
       </a>
 
       {/* Minimalist Portfolio */}
-      <a className="aspect-[4/3] md:aspect-auto md:col-span-4 group relative rounded-3xl overflow-hidden bg-surface-container-high border border-white/5 cursor-pointer" href="">
+      <a className="aspect-[4/3] md:aspect-auto md:col-span-4 group relative rounded-3xl overflow-hidden bg-surface-container-high border border-white/5 cursor-pointer" href="https://minimalistportfolio.afiqmuhaimin211188.workers.dev/">
         <img
           className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60"
           alt="Creative Project"
@@ -56,7 +56,7 @@ return(
       </a>
 
       {/* Dynamic Startup */}
-      <div className="aspect-video md:aspect-auto md:col-span-8 group relative rounded-3xl overflow-hidden bg-surface-container-high border border-white/5 cursor-pointer">
+      <a className="aspect-video md:aspect-auto md:col-span-8 group relative rounded-3xl overflow-hidden bg-surface-container-high border border-white/5 cursor-pointer" href="https://afiqmuhaimin-solartec.pages.dev/">
         <img
           className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60"
           alt="SaaS Project"
@@ -68,7 +68,7 @@ return(
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-1 md:mb-2 font-headline">Digital Presence Platform</h3>
           <p className="hidden sm:block text-on-surface-variant max-w-md font-body text-sm md:text-base">Elevating brands through modern, high-performance web experiences</p>
         </div>
-      </div>
+      </a>
 
     </div>
   </div>
