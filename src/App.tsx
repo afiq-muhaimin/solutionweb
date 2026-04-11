@@ -1,3 +1,4 @@
+import CTAsection from "./component/ctasection";
 import Sample from "./component/sample";
 
 const App = () => {
@@ -6,20 +7,15 @@ const App = () => {
       {/* TopNavBar */}
       <nav className="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-xl">
         <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-          <div className="text-xl font-bold tracking-tight text-white font-headline">DevEx Gallery</div>
+          <div className="text-xl font-bold tracking-tight text-white font-headline">DevEx Digital</div>
           <div className="hidden md:flex items-center gap-8">
             <a className="text-gray-400 font-medium hover:text-white transition-colors font-body" href="#services">Services</a>
             <a className="text-gray-400 font-medium hover:text-white transition-colors font-body" href="#pricing">Pricing</a>
             <a className="text-gray-400 font-medium hover:text-white transition-colors font-body" href="#samples">Samples</a>
+            <a className="text-gray-400 font-medium hover:text-white transition-colors font-body" href="#contact">Contact</a>
           </div>
-          <a className="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-200" href="#footer" onClick={(e) => {
-            e.preventDefault();
-            document.getElementById("footer")?.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-          }}>
-            Hire Me
+          <a className="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-200" href="https://afiq-muhaimin.github.io/">
+            About Me
           </a>
         </div>
       </nav>
@@ -45,13 +41,13 @@ const App = () => {
                   Bridging the gap between creative vision and technical excellence. We build high-performance digital experiences that scale.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <button className="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:translate-y-[-2px] transition-all shadow-lg shadow-primary-container/20">
+                  <a className="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:translate-y-[-2px] transition-all shadow-lg shadow-primary-container/20" href="#contact">
                     Start a Project
                     <span className="material-symbols-outlined">arrow_forward</span>
-                  </button>
-                  <button className="bg-transparent border border-outline-variant/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-surface-container-high transition-all">
+                  </a>
+                  <a className="bg-transparent border border-outline-variant/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-surface-container-high transition-all" href="#sample">
                     View Samples
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="lg:col-span-5 relative">
@@ -244,38 +240,23 @@ const App = () => {
           </div>
         </section>
 
-        <Sample/>
+        <Sample />
 
         {/* CTA Section */}
-        <section className="py-32 relative overflow-hidden" id="footer">
-          <div className="max-w-5xl mx-auto px-8">
-            <div className="bg-primary-container/10 border border-primary/20 rounded-[40px] p-12 md:p-20 text-center relative overflow-hidden">
-              <div className="absolute top-0 right-0 p-10 opacity-10">
-                <span className="material-symbols-outlined text-[200px]" style={{ fontVariationSettings: "'FILL' 1" }}>rocket_launch</span>
-              </div>
-              <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-8 font-headline">Ready to build your next <span className="text-primary">big thing?</span></h2>
-              <p className="text-on-surface-variant text-lg md:text-xl mb-12 max-w-2xl mx-auto font-body">Let's discuss your requirements and create a digital masterpiece that drives results.</p>
-              <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <button className="bg-primary-container text-on-primary-container px-10 py-5 rounded-2xl font-bold text-lg shadow-xl shadow-primary-container/30 hover:translate-y-[-4px] transition-all">Schedule a Call</button>
-                <button className="bg-white/5 border border-white/10 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all">Send an Email</button>
-              </div>
-            </div>
-          </div>
-        </section>
+        <CTAsection />
+        
       </main>
 
       {/* Footer */}
       <footer className="w-full border-t border-white/10 bg-[#131313]">
         <div className="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto">
           <div className="mb-8 md:mb-0">
-            <div className="text-lg font-bold text-white font-headline mb-2">DevEx Gallery</div>
-            <div className="text-gray-500 text-sm font-body">© 2024 DevEx Gallery. Built with precision.</div>
+            <div className="text-lg font-bold text-white font-headline mb-2">DevEx Digital</div>
+            <div className="text-gray-500 text-sm font-body">© 2026 DevEx Digital. Built with precision.</div>
           </div>
           <div className="flex flex-wrap justify-center gap-8">
-            <a className="text-gray-500 hover:text-[#4169E1] transition-colors font-label uppercase text-xs tracking-widest" href="#">Email</a>
-            <a className="text-gray-500 hover:text-[#4169E1] transition-colors font-label uppercase text-xs tracking-widest" href="#">LinkedIn</a>
-            <a className="text-gray-500 hover:text-[#4169E1] transition-colors font-label uppercase text-xs tracking-widest" href="#">GitHub</a>
-            <a className="text-gray-500 hover:text-[#4169E1] transition-colors font-label uppercase text-xs tracking-widest" href="#">Source</a>
+            <a className="text-gray-500 hover:text-[#4169E1] transition-colors font-label uppercase text-xs tracking-widest" href="#">afiqmuhaimin211188@gmail.com</a>
+            <a className="text-gray-500 hover:text-[#4169E1] transition-colors font-label uppercase text-xs tracking-widest" href="#">011-28343371</a>
           </div>
         </div>
       </footer>
