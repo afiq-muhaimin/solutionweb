@@ -1,6 +1,7 @@
 import { useState } from "react";
 import CTAsection from "./component/ctasection";
 import Sample from "./component/sample";
+import Workflow from "./component/workflow";
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -284,6 +285,10 @@ const App = () => {
         </section>
 
         <Sample />
+
+        {/* Workflow Section */}
+        <Workflow/>
+
 
         {/* CTA Section */}
         <CTAsection />
