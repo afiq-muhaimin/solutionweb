@@ -1,7 +1,9 @@
+import { useState } from "react";
 import CTAsection from "./component/ctasection";
 import Sample from "./component/sample";
 
 const App = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="bg-background text-on-background selection:bg-primary/30 min-h-screen">
       {/* TopNavBar */}
@@ -9,16 +11,61 @@ const App = () => {
         <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
           <div className="text-xl font-bold tracking-tight text-white font-headline">DevEx Digital</div>
           <div className="hidden md:flex items-center gap-8">
-            <a className="text-gray-400 font-medium hover:text-white transition-colors font-body" href="#services">Services</a>
-            <a className="text-gray-400 font-medium hover:text-white transition-colors font-body" href="#pricing">Pricing</a>
-            <a className="text-gray-400 font-medium hover:text-white transition-colors font-body" href="#samples">Samples</a>
-            <a className="text-gray-400 font-medium hover:text-white transition-colors font-body" href="#contact">Contact</a>
+            <a href="#services" className="text-gray-400 hover:text-white">Services</a>
+            <a href="#pricing" className="text-gray-400 hover:text-white">Pricing</a>
+            <a href="#samples" className="text-gray-400 hover:text-white">Samples</a>
+            <a href="#contact" className="text-gray-400 hover:text-white">Contact</a>
           </div>
-          <a className="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-200" href="https://afiq-muhaimin.github.io/">
-            About Me
+          <div className="flex items-center gap-4">
+            <a className="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-200" href="https://afiq-muhaimin.github.io/">
+              About Me
+            </a>
+            <button
+              className="md:hidden text-white"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              <span className="material-symbols-outlined text-3xl">
+                {menuOpen ? "close" : "menu"}
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div
+          className={`md:hidden bg-[#131313] px-8 pb-6 flex flex-col gap-4 transition-all duration-300 ${menuOpen ? "block" : "hidden"
+            }`}
+        >
+          <a
+            href="#services"
+            className="text-gray-300 hover:text-white"
+            onClick={() => setMenuOpen(false)}
+          >
+            Services
+          </a>
+          <a
+            href="#pricing"
+            className="text-gray-300 hover:text-white"
+            onClick={() => setMenuOpen(false)}
+          >
+            Pricing
+          </a>
+          <a
+            href="#samples"
+            className="text-gray-300 hover:text-white"
+            onClick={() => setMenuOpen(false)}
+          >
+            Samples
+          </a>
+          <a
+            href="#contact"
+            className="text-gray-300 hover:text-white"
+            onClick={() => setMenuOpen(false)}
+          >
+            Contact
           </a>
         </div>
       </nav>
+      <div className="pt-24"></div>
 
       <main>
         {/* Hero Section */}
@@ -34,7 +81,7 @@ const App = () => {
                   <span className="w-2 h-2 rounded-full bg-primary"></span>
                   Available for new projects
                 </div>
-                <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.1] mb-8 font-headline">
+                <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.1] mb-8 font-headline">
                   Comprehensive <span className="text-primary">web solutions</span> for your business
                 </h1>
                 <p className="text-on-surface-variant text-lg md:text-xl max-w-xl mb-10 leading-relaxed font-body">
@@ -80,10 +127,6 @@ const App = () => {
               <div className="max-w-2xl">
                 <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-headline">Technical Expertise</h2>
                 <p className="text-on-surface-variant text-lg font-body">Specialized services designed to elevate your digital presence through rigorous engineering and refined design.</p>
-              </div>
-              <div className="text-primary font-bold flex items-center gap-2 cursor-pointer group">
-                View All Services
-                <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -244,7 +287,7 @@ const App = () => {
 
         {/* CTA Section */}
         <CTAsection />
-        
+
       </main>
 
       {/* Footer */}
