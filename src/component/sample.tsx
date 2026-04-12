@@ -18,7 +18,7 @@ return(
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent"></div>
         <div className="absolute bottom-0 left-0 p-6 md:p-10 w-full">
-          <span className="px-3 py-1 bg-primary text-on-primary text-[10px] font-extrabold tracking-widest uppercase rounded mb-3 md:mb-4 inline-block">Personal Portfolio</span>
+          <span className="px-3 py-1 bg-primary text-on-primary text-[10px] font-extrabold tracking-widest uppercase rounded mb-3 md:mb-4 inline-block">Business Portfolio</span>
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-1 md:mb-2 font-headline">Modern Corporate</h3>
           <p className="hidden sm:block text-on-surface-variant max-w-md font-body text-sm md:text-base">Scalable architectures with focus on security and professional brand integrity.</p>
         </div>
