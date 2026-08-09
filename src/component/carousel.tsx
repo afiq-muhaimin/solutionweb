@@ -18,7 +18,7 @@ const carouselItems: CarouselItem[] = [
     title: "Coffee Break",
     tag: "Landing Page",
     description: "Coffee-rich store front experience.",
-    href: "#",
+    href: "https://coffee-1.afiqmuhaimin211188.workers.dev/",
     imageSrc: "dist/assets/coffee-break.avif"
   },
   {
@@ -38,14 +38,14 @@ const carouselItems: CarouselItem[] = [
     imageSrc: "dist/assets/Frame 1-CeptMx_S.png",
     imageFit: "contain"
   },
-  {
-    id: 4,
-    title: "Running Club",
-    tag: "Landing Page",
-    description: "A bold, conversion-focused landing page.",
-    href: "#",
-    imageSrc: "dist/assets/running-club.avif"
-  },
+  // {
+  //   id: 4,
+  //   title: "Running Club",
+  //   tag: "Landing Page",
+  //   description: "A bold, conversion-focused landing page.",
+  //   href: "#",
+  //   imageSrc: "dist/assets/running-club.avif"
+  // },
   // {
   //   id: 5,
   //   title: "Harbor Group",
