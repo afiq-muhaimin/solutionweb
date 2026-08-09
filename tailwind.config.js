@@ -54,7 +54,17 @@ export default {
         "on-secondary-fixed": "#1a1c1c",
         "inverse-on-surface": "#303030",
         "primary-container": "#4169e1",
-        "error": "#ffb4ab"
+        "error": "#ffb4ab",
+
+        "page": "#f7f8fb",
+        "ink": "#1d1d1f",
+        "ink-muted": "#6e6e73",
+        "ink-faint": "#8a8a8e",
+        "accent": "#0071e3",
+        "accent-hover": "#0058b0",
+        "accent-light": "#2997ff",
+        "magenta": "#d1006b",
+        "forest": "#1a8a4a"
       },
       borderRadius: {
         "DEFAULT": "0.25rem",

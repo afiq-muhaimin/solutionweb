@@ -1,102 +1,55 @@
+import Reveal from "./reveal";
+
 const Workflow = () => {
+  return (
+    <section id="workflow" className="relative z-[1] py-24 px-6">
+      <div
+        data-glass
+        className="max-w-[980px] mx-auto bg-white/35 backdrop-blur-xl backdrop-saturate-[1.8] border border-white/50 rounded-[32px] p-10 md:p-16 shadow-[0_8px_32px_rgba(31,38,135,0.06)]"
+      >
+        {/* Header */}
+        <h2 className="text-[clamp(1.8rem,3vw,2.6rem)] font-bold tracking-[-0.02em] mb-4 text-center">How we work</h2>
+        <p className="text-ink-muted text-[17px] text-center max-w-[480px] mx-auto mb-16">
+          A transparent process, delivered in one to two weeks.
+        </p>
 
-    return (
-        <section className="py-32 bg-surface-container-low" id="workflow">
-            <div className="max-w-6xl mx-auto px-8">
+        {/* Steps */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <Reveal delayMs={0} className="text-center">
+            <div className="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm mx-auto mb-5">1</div>
+            <h3 className="text-[15px] font-bold mb-1">Day 1–2</h3>
+            <p className="text-accent text-[13px] font-semibold mb-2">Design Phase</p>
+            <p className="text-ink-muted text-[13px] leading-relaxed">Wireframes and UI design based on your requirements and branding.</p>
+          </Reveal>
 
-                {/* Header */}
-                <div className="text-center mb-20">
-                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-headline">
-                        Project Workflow
-                    </h2>
-                    <p className="text-on-surface-variant max-w-xl mx-auto font-body">
-                        A simple and transparent process to deliver your website within 1–2 weeks.
-                    </p>
-                </div>
+          <Reveal delayMs={80} className="text-center">
+            <div className="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm mx-auto mb-5">2</div>
+            <h3 className="text-[15px] font-bold mb-1">Day 3–7</h3>
+            <p className="text-accent text-[13px] font-semibold mb-2">Development</p>
+            <p className="text-ink-muted text-[13px] leading-relaxed">Full build with responsive, optimized performance.</p>
+          </Reveal>
 
-                {/* Timeline */}
-                <div className="relative">
+          <Reveal delayMs={160} className="text-center">
+            <div className="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm mx-auto mb-5">3</div>
+            <h3 className="text-[15px] font-bold mb-1">Day 7–10</h3>
+            <p className="text-accent text-[13px] font-semibold mb-2">Feedback & Refinement</p>
+            <p className="text-ink-muted text-[13px] leading-relaxed">Revisions based on your feedback before final delivery.</p>
+          </Reveal>
 
-                    {/* Line */}
-                    <div className="absolute top-6 left-0 w-full h-[2px] bg-white/10"></div>
+          <Reveal delayMs={240} className="text-center">
+            <div className="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm mx-auto mb-5">4</div>
+            <h3 className="text-[15px] font-bold mb-1">Day 10–14</h3>
+            <p className="text-accent text-[13px] font-semibold mb-2">Deployment</p>
+            <p className="text-ink-muted text-[13px] leading-relaxed">Launch, DNS setup, and final handover.</p>
+          </Reveal>
+        </div>
 
-                    {/* Steps */}
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
+        <p className="text-center text-ink-muted text-[13px] mt-14">
+          Estimated delivery: <span className="text-ink font-semibold">1–2 weeks</span>, depending on scope and feedback turnaround.
+        </p>
+      </div>
+    </section>
+  );
+};
 
-                        {/* Step 1 */}
-                        <div className="text-center">
-                            <div className="flex justify-center mb-4">
-                                <div className="w-5 h-5 rounded-full bg-primary border-4 border-[#131313] z-10"></div>
-                            </div>
-                            <h3 className="text-white font-bold text-lg mb-2 font-headline">
-                                Day 1–2
-                            </h3>
-                            <p className="text-primary font-semibold mb-2">Design Phase</p>
-                            <p className="text-on-surface-variant text-sm font-body">
-                                Wireframe and UI design based on your requirements and branding.
-                            </p>
-                        </div>
-
-                        {/* Step 2 */}
-                        <div className="text-center">
-                            <div className="flex justify-center mb-4">
-                                <div className="w-5 h-5 rounded-full bg-primary border-4 border-[#131313] z-10"></div>
-                            </div>
-                            <h3 className="text-white font-bold text-lg mb-2 font-headline">
-                                Day 3–7
-                            </h3>
-                            <p className="text-primary font-semibold mb-2">Development</p>
-                            <p className="text-on-surface-variant text-sm font-body">
-                                Full website development with responsive and optimized performance.
-                            </p>
-                        </div>
-
-                        {/* Step 3 */}
-                        <div className="text-center">
-                            <div className="flex justify-center mb-4">
-                                <div className="w-5 h-5 rounded-full bg-primary border-4 border-[#131313] z-10"></div>
-                            </div>
-                            <h3 className="text-white font-bold text-lg mb-2 font-headline">
-                                Day 7–10
-                            </h3>
-                            <p className="text-primary font-semibold mb-2">Feedback & Refinement</p>
-                            <p className="text-on-surface-variant text-sm font-body">
-                                Revisions and improvements based on your feedback before final delivery.
-                            </p>
-                        </div>
-
-                        {/* Step 4 */}
-                        <div className="text-center">
-                            <div className="flex justify-center mb-4">
-                                <div className="w-5 h-5 rounded-full bg-primary border-4 border-[#131313] z-10"></div>
-                            </div>
-                            <h3 className="text-white font-bold text-lg mb-2 font-headline">
-                                Day 10–14
-                            </h3>
-                            <p className="text-primary font-semibold mb-2">Deployment</p>
-                            <p className="text-on-surface-variant text-sm font-body">
-                                Revisions and improvements based on your feedback before final delivery.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Timeline note */}
-                <div className="text-center mt-16">
-                    <span className="text-sm text-on-surface-variant font-body">
-                        ⏱ Estimated delivery: <span className="text-white font-semibold">1 – 2 weeks</span>
-                    </span>
-                </div>
-                <div className="text-center">
-                    <span className="text-sm text-on-surface-variant font-body">
-                        <span className="text-white font-semibold">Kindly note that this timeline is an estimated project duration and may vary depending on requirements and feedback.</span>
-                    </span>
-                </div>
-
-            </div>
-        </section>
-    )
-
-}
-
-export default Workflow
+export default Workflow;
