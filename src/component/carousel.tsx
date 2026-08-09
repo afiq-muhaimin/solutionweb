@@ -8,6 +8,8 @@ interface CarouselItem {
   description: string;
   href: string;
   imageSrc?: string;
+  /** "cover" (default) fills the frame and crops; "contain" zooms out to show the full screenshot, letterboxed. */
+  imageFit?: "cover" | "contain";
 }
 
 const carouselItems: CarouselItem[] = [
@@ -17,6 +19,7 @@ const carouselItems: CarouselItem[] = [
     tag: "Landing Page",
     description: "A bold, conversion-focused landing page.",
     href: "#",
+    imageSrc: "dist/assets/running-club.avif"
   },
   {
     id: 2,
@@ -24,35 +27,39 @@ const carouselItems: CarouselItem[] = [
     tag: "E-commerce",
     description: "Modern storefront with clean product UX.",
     href: "#",
+    imageSrc: "dist/assets/motorsport.jpg"
   },
   {
     id: 3,
-    title: "Studio Folio",
+    title: "Personal Folio",
     tag: "Portfolio",
     description: "Minimalist personal branding site.",
-    href: "#",
+    href: "https://afiq-muhaimin.github.io/",
+    imageSrc: "dist/assets/Frame 1-CeptMx_S.png",
+    imageFit: "contain"
   },
   {
     id: 4,
-    title: "Pulse Analytics",
-    tag: "SaaS",
-    description: "Feature-rich SaaS dashboard experience.",
+    title: "Coffee Break",
+    tag: "Landing Page",
+    description: "Coffee-rich store front experience.",
     href: "#",
+    imageSrc: "dist/assets/coffee-break.avif"
   },
-  {
-    id: 5,
-    title: "Harbor Group",
-    tag: "Corporate",
-    description: "Professional multi-page corporate site.",
-    href: "#",
-  },
-  {
-    id: 6,
-    title: "The Weekly",
-    tag: "Blog",
-    description: "Editorial-style content-first blog.",
-    href: "#",
-  },
+  // {
+  //   id: 5,
+  //   title: "Harbor Group",
+  //   tag: "Corporate",
+  //   description: "Professional multi-page corporate site.",
+  //   href: "#",
+  // },
+  // {
+  //   id: 6,
+  //   title: "The Weekly",
+  //   tag: "Blog",
+  //   description: "Editorial-style content-first blog.",
+  //   href: "#",
+  // },
 ];
 
 const GAP = 20;
@@ -178,13 +185,33 @@ const Carousel = () => {
                 className="pressable group flex-shrink-0 block rounded-[18px] overflow-hidden border border-white/60 bg-white/40 backdrop-blur-xl backdrop-saturate-[1.8] shadow-[0_8px_24px_rgba(31,38,135,0.06)]"
                 style={{ width: cardWidth || "calc(33.33% - 14px)" }}
               >
-                <div
-                  className="aspect-square w-full"
-                  style={{
-                    backgroundImage:
-                      "repeating-linear-gradient(135deg, #eaeaec 0px, #eaeaec 14px, #dedee1 14px, #dedee1 28px)",
-                  }}
-                />
+                <div className="aspect-square w-full relative overflow-hidden bg-[#f0f0f2]">
+                  {item.imageSrc ? (
+                    <img
+                      src={item.imageSrc}
+                      alt={item.title}
+                      draggable={false}
+                      className={`absolute inset-0 w-full h-full transition-transform duration-700 ${
+                        item.imageFit === "contain"
+                          ? "object-contain p-3 group-hover:scale-[1.03]"
+                          : "object-cover group-hover:scale-105"
+                      }`}
+                    />
+                  ) : (
+                    <div
+                      className="absolute inset-0 flex flex-col items-center justify-center gap-2"
+                      style={{
+                        backgroundImage:
+                          "repeating-linear-gradient(135deg, #eaeaec 0px, #eaeaec 14px, #dedee1 14px, #dedee1 28px)",
+                      }}
+                    >
+                      <span className="material-symbols-outlined text-3xl text-ink-faint/70">add_photo_alternate</span>
+                      <span className="text-ink-faint/70 text-[11px] font-semibold tracking-wide uppercase">
+                        Add screenshot
+                      </span>
+                    </div>
+                  )}
+                </div>
                 <div className="p-[18px]">
                   <span className="inline-block bg-accent/10 text-accent text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-md mb-2.5">
                     {item.tag}

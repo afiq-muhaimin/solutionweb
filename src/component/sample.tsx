@@ -19,7 +19,7 @@ const Sample = () => {
               <img
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 alt="Enterprise Project"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaRFtTqDjlP_xedGDzOQnb8DpTBqU2_LBZMabZ4w9zD4j8jfpb9rd1DR1b-CmgafPhay24Vf2-qmzCdcST0H3j-iRS08DgM5SVrW4aVlsuOPJ2WvKAl9hnZ8E77DFu2Ffl1Gz0N86lU9BYNOwR_aL0Scqweae-M8YI5v_nrQdagyfnrJPelsg8w1QtqdEc_XUnvRLNw8ysjafhi-7ljqc_BcPx5MvmfTMp1QTPzLeOd3h0SwYuwMJR-tX7e4J7j2kkQVgYeB4M03O3"
+                src="dist\assets\construction-2.jpg"
               />
               <div className="absolute inset-0 flex flex-col items-start justify-end p-6 md:p-8 bg-gradient-to-t from-black/55 to-transparent to-55%">
                 <span
@@ -43,14 +43,14 @@ const Sample = () => {
               <img
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 alt="Retail Project"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi6AOBgz1qmgVtQUBEeVbbsK4apolTDEuCI8j4K14wkZRzzjYpkTS5iSfTuPT3bqI8poEERE5uhC-nOQvj0F9rvCtGNKC-NNHmS3TPRTpU8b_4ajogm7BjoZjkaTDhe_6OMGl4KOBuv2hN0WhhNdSmlpp3jCpBXADueEiCJqvRQ3Dt9Pal7LHP8-2yOJk1Wq0z2FHchPaQPj7XWyX1QmQpKxzebnlFovslAUgAcRgQM601k9OflYungAAfG9UoeRVypCFGRNKk3u86"
+                src="dist\assets\portfolio-2.jpg"
               />
               <div className="absolute inset-0 flex flex-col items-start justify-end p-6 md:p-7 bg-gradient-to-t from-black/55 to-transparent to-55%">
                 <span
                   data-glass
                   className="bg-accent/55 backdrop-blur-md text-white text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-md mb-2.5"
                 >
-                  Retail
+                  Services
                 </span>
                 <h3 className="text-lg md:text-xl font-bold text-white mb-1.5">Product Showcase</h3>
                 <p className="hidden sm:block text-white/85 max-w-md text-sm md:text-base">Sleek product-centric showcase.</p>
@@ -91,7 +91,7 @@ const Sample = () => {
               <img
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 alt="SaaS Project"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK-zBtOJ2z173iad9QvZw7n-knkhG7jBv1cMaH5mTfTvU_I3we-u-PWamNeA85297mwx68aS2q5ARfKqkHX0znOhouCy5QoWnZLj2bTZnDN427yrdDkM5RlcsG5fTONC_6vmEqb5eYvO-GrNhYBMs1wnPKOWT4b2-ROgs-nmnZAzyQe-B95cb684_-L2CG9F5prNDWLrdi15k9ymiOvNEO60HZbX5Fs2W7Dtm3tf2ns_oI81thXdxQRcjtgnK_oW9JDZn-cn8jedGz"
+                src="dist\assets\portfolio-3.jpg"
               />
               <div className="absolute inset-0 flex flex-col items-start justify-end p-6 md:p-8 bg-gradient-to-t from-black/55 to-transparent to-55%">
                 <span
