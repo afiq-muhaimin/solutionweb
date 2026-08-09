@@ -15,11 +15,11 @@ interface CarouselItem {
 const carouselItems: CarouselItem[] = [
   {
     id: 1,
-    title: "Running Club",
+    title: "Coffee Break",
     tag: "Landing Page",
-    description: "A bold, conversion-focused landing page.",
+    description: "Coffee-rich store front experience.",
     href: "#",
-    imageSrc: "dist/assets/running-club.avif"
+    imageSrc: "dist/assets/coffee-break.avif"
   },
   {
     id: 2,
@@ -40,11 +40,11 @@ const carouselItems: CarouselItem[] = [
   },
   {
     id: 4,
-    title: "Coffee Break",
+    title: "Running Club",
     tag: "Landing Page",
-    description: "Coffee-rich store front experience.",
+    description: "A bold, conversion-focused landing page.",
     href: "#",
-    imageSrc: "dist/assets/coffee-break.avif"
+    imageSrc: "dist/assets/running-club.avif"
   },
   // {
   //   id: 5,
