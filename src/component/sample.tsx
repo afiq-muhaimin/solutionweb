@@ -19,7 +19,7 @@ const Sample = () => {
               <img
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 alt="Enterprise Project"
-                src="dist/assets/construction-2.jpg"
+                src="/images/construction-2.jpg"
               />
               <div className="absolute inset-0 flex flex-col items-start justify-end p-6 md:p-8 bg-gradient-to-t from-black/55 to-transparent to-55%">
                 <span
@@ -43,7 +43,7 @@ const Sample = () => {
               <img
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 alt="Retail Project"
-                src="dist/assets/portfolio-2.jpg"
+                src="/images/portfolio-2.jpg"
               />
               <div className="absolute inset-0 flex flex-col items-start justify-end p-6 md:p-7 bg-gradient-to-t from-black/55 to-transparent to-55%">
                 <span
@@ -91,7 +91,7 @@ const Sample = () => {
               <img
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 alt="SaaS Project"
-                src="dist/assets/portfolio-3.jpg"
+                src="/images/portfolio-3.jpg"
               />
               <div className="absolute inset-0 flex flex-col items-start justify-end p-6 md:p-8 bg-gradient-to-t from-black/55 to-transparent to-55%">
                 <span

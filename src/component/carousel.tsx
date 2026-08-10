@@ -19,7 +19,7 @@ const carouselItems: CarouselItem[] = [
     tag: "Landing Page",
     description: "Coffee-rich store front experience.",
     href: "https://coffee-1.afiqmuhaimin211188.workers.dev/",
-    imageSrc: "dist/assets/coffee-break.avif"
+    imageSrc: "/images/coffee-break.avif"
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const carouselItems: CarouselItem[] = [
     tag: "E-commerce",
     description: "Modern storefront with clean product UX.",
     href: "https://motorsport.afiqmuhaimin211188.workers.dev/",
-    imageSrc: "dist/assets/motorsport.jpg"
+    imageSrc: "/images/motorsport.jpg"
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const carouselItems: CarouselItem[] = [
     tag: "Portfolio",
     description: "Minimalist personal branding site.",
     href: "https://afiq-muhaimin.github.io/",
-    imageSrc: "dist/assets/Frame 1-CeptMx_S.png",
+    imageSrc: "/images/personal-folio.png",
     imageFit: "contain"
   },
   // {
@@ -44,7 +44,7 @@ const carouselItems: CarouselItem[] = [
   //   tag: "Landing Page",
   //   description: "A bold, conversion-focused landing page.",
   //   href: "#",
-  //   imageSrc: "dist/assets/running-club.avif"
+  //   imageSrc: "/images/running-club.avif"
   // },
   // {
   //   id: 5,
